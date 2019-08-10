@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link href="./style.css" type="text/css" rel="stylesheet">
+  <title>CoC Script</title>
+</head>
+
+<body>
+  <div class="container">
+    <img src="./Pics/10thmtnpatch.png" alt="10th Mountain Division Patch" id="patch">
+    <img src="./Pics/10thmtnpatch.png" alt="10th Mountain Division Patch" id="patch2">
+
+    <h1 id="title">BDE/BN CoC Script</h1>
+    <form class="form">
+  
+      <section class="this-unit">
+        <label class="row-header" for="unit">Unit</label>
+        <input type="text" id="unit">
+      </section>
+  
+      <section class="this-date">
+        <label  class="row-header" for="ceremony-date">Ceremony Date</label>
+        <input type="date" id="ceremony-date" min="2019-01-01" max="2025-12-31">
+      </section>
+
+      <section class="cg">
+        <label class="row-header">Commanding General</label>
+        <label for="cg-rank">Rank</label>
+        <select id="cg-rank" required="required">
+          <option></option>       
+          <option value="LTG">LTG</option>
+          <option value="MG">MG</option>
+          <option value="BG">BG</option>
+        </select>
+        <label for="cg-first">First Name</label>
+        <input type="text" id="cg-first">   
+        <label for="cg-middle">Middle Initial</label>
+        <input type="text" id="cg-middle" maxlength="1" pattern="[a-zA-z]">  
+        <label for="cg-last">Last Name</label>
+        <input type="text" id="cg-last">
+      </section>
+
+      <section class="sen-c">
+        <label class="row-header">Reviewing Officer</label>
+        <label for="sen-c-rank">Rank</label>
+        <select id="sen-c-rank">
+          <option value=""></option>
+          <option value="LTG">LTG</option>         
+          <option value="MG">MG</option>
+          <option value="BG">BG</option>
+          <option value="COL">COL</option>
+          <option value="LTC">LTC</option>
+        </select>
+        <label for="sen-c-first">First Name</label>
+        <input type="text" id="sen-c-first">
+        <label for="sen-c-middle">Middle Initial</label>
+        <input type="text" id="sen-c-middle" maxlength="1">
+        <label for="sen-c-last">Last Name</label>
+        <input type="text" id="sen-c-last">
+      </section>
+  
+      <section class="dcsm">
+        <label class="row-header">Division CSM</label> 
+        <label for="dcsm-first">First Name</label>
+        <input type="text" id="dcsm-first">
+        <label for="dcsm-middle">Middle Initial</label>
+        <input type="text" id="dcsm-middle" maxlength="1"> 
+        <label for="dcsm-last">Last Name</label>
+        <input type="text" id="dcsm-last">
+      </section>
+      
+      <section class="csm">
+        <label class="row-header">Current CSM</label>
+        <label for="csm-first">First Name</label>
+        <input type="text" id="csm-first">
+        <label for="csm-middle">Middle Initial</label>        
+        <input type="text" id="csm-middle" maxlength="1">
+        <label for="csm-last">Last Name</label>
+        <input type="text" id="csm-last">
+      </section>
+  
+      <section class="out-c">
+        <label class="row-header">Outgoing Commander</label>
+        <label for="out-c-rank">Rank</label>
+        <select id="out-c-rank">
+          <option value=""></option>  
+          <option value="COL">COL</option>
+          <option value="LTC">LTC</option>
+          <option value="MAJ">MAJ</option>
+        </select>
+        <label for="out-c-first">First Name</label>
+        <input type="text" id="out-c-first">
+        <label for="out-c-middle">Middle Initial</label>
+        <input type="text" id="out-c-middle" maxlength="1">
+        <label for="out-c-last">Last Name</label>
+        <input type="text" id="out-c-last">
+      </section>
+  
+      <section class="in-c">
+        <label class="row-header">Incoming Commander</label>
+        <label for="in-c-rank">Rank</label>
+        <select id="in-c-rank">
+          <option value=""></option>
+          <option value="COL">COL</option>
+          <option value="LTC">LTC</option>
+          <option value="MAJ">MAJ</option>
+        </select>
+        <label for="in-c-first">First Name</label>
+        <input type="text" id="in-c-first">
+        <label for="in-c-middle">Middle Initial</label>
+        <input type="text" id="in-c-middle" maxlength="1">
+        <label for="in-c-last">Last Name</label>
+        <input type="text" id="in-c-last">
+      </section>
+
+      <section class= "out-s">
+        <label class="row-header">Outgoing Spouse</label>
+        <label for="out-s-title">Title</label>
+        <select id="out-s-title">
+          <option value=""></option>
+          <option value="Mr.">Mr.</option>
+          <option value="Mrs.">Mrs.</option>
+          <option value="Dr.">Dr.</option>
+        </select>
+        <label for="out-s-first">First Name</label>
+        <input type="text" id="out-s-first"> 
+        <label for="out-s-last">Last Name</label>
+        <input type="text" id="out-s-last">
+      </section>
+
+      <section class= "in-s">
+        <label class="row-header">Incoming Spouse</label>
+        <label for="in-s-title">Title</label>
+        <select name="in-s-title" id="in-s-title">
+          <option value=""></option>
+          <option value="Mr.">Mr.</option>
+          <option value="Mrs.">Mrs.</option>
+          <option value="Dr.">Dr.</option>
+        </select>
+        <label for="in-s-first">First Name</label>
+        <input type="text" id="in-s-first" >
+        <label for="in-s-last">Last Name</label>
+        <input type="text" id="in-s-last">
+      </section>
+  
+      <section class= "cot">
+        <label class="row-header">Commander of Troops</label>
+        <label for="cot-rank">Rank</label>
+        <select id="cot-rank">
+          <option value=""></option>
+          <option value="COL">COL</option>
+          <option value="LTC">LTC</option>
+          <option value="LTC">MAJ</option>
+        </select>
+        <label for="cot-first">First Name</label>
+        <input type="text" id="cot-first">
+        <label for="cot-middle">Middle Initial</label>
+        <input type="text" id="cot-middle" maxlength="1"> 
+        <label for="cot-last">Last Name</label>
+        <input type="text" id="cot-last">
+      </section>
+  
+      <section class="band-c">
+        <label class="row-header">Band Commander</label>
+        <label for="band-c-rank">Rank</label>
+        <select id="band-c-rank">
+          <option value=""></option>
+          <option value="WO1">WO1</option>
+          <option value="WO2">WO2</option>
+          <option value="WO3">WO3</option>
+          <option value="WO4">WO4</option>
+          <option value="WO5">WO5</option>
+        </select>
+        <label for="band-c-first">First Name</label>
+        <input type="text" id="band-c-first">
+        <label for="band-c-middle">Middle Initial</label>
+        <input type="text" id="band-c-middle" maxlength="1"> 
+        <label for="band-c-last">Last Name</label>
+        <input type="text" id="band-c-last">
+      </section>
+  
+      <section class="drum">
+        <label class="row-header">Drum Major</label>
+        <label for="drum-rank">Rank</label>
+        <select id="drum-rank">
+          <option value=""></option>
+          <option value="SGT">SGT</option>
+          <option value="SSG">SSG</option>
+          <option value="SFC">SFC</option>
+          <option value="1SG">1SG</option>
+        </select>
+        <label for="drum-last">Last Name</label>
+        <input type="text" id="drum-last">
+      </section>
+  
+      <section class="chap">
+        <label class="row-header">Chaplain</label>
+        <label for="chap-last">Last Name</label>
+        <input type="text" id="chap-last">
+      </section>
+
+      <button class="button" type="button" id="final-product">Submit</button>
+      <span id="final-script"></span>
+      <script src="./changeOfCommandScript.js"></script>
+    </form>
+  </div>
+  <div id="script">
+    <p class="ceremony-part">
+      WELCOME
+    </p>
+    <p>
+      NARRATOR:
+    </p>
+    <p>
+      “LADIES AND GENTLEMEN, THE <b><span class="unit">[UNIT]</span></b> CHANGE OF COMMAND CEREMONY WILL BEGIN IN 5 MINUTES.”
+    </p>
+    <p>
+      “LADIES AND GENTLEMEN, THE <b><span class="unit">[UNIT]</span></b> CHANGE OF COMMAND CEREMONY WILL BEGIN MOMENTARILY. WE ASK THAT YOU PLEASE BE SEATED AND THAT ALL CELL PHONES AND ELECTRONIC DEVICES BE TURNED OFF FOR THE DURATION OF THE EVENT.”
+    </p>
+    <p>
+      “GOOD MORNING LADIES, GENTLEMEN, AND DISTINGUISHED GUESTS. ON BEHALF OF <b><span class="cg-rank">[CG RANK AND FULL NAME]</span></b> <b><span class="cg-first"></span></b> <b><span class="cg-middle"></span></b>. <b><span class="cg-last"></span></b>, COMMANDING GENERAL OF THE 10TH MOUNTAIN DIVISION (LIGHT INFANTRY) AND FORT DRUM, AND COMMAND SERGEANT MAJOR <b><span class="dcsm-first">[CSM FULL NAME]</span></b> <b><span class="dcsm-middle"></span></b>. <b><span class="dcsm-last"></span></b>, THE 10TH MOUNTAIN DIVISION (LIGHT INFANTRY) SERGEANT MAJOR. WELCOME TO THE 10TH MOUNTAIN DIVISION (LIGHT INFANTRY) AND FORT DRUM CHANGE OF COMMAND CEREMONY. TODAY THE COMMAND AND COLORS OF <b><span class="unit">[UNIT]</span></b> WILL BE PASSED FROM THE OUTGOING COMMANDER, <b><span class="out-c-rank">[OUTGOING COMMANDER RANK AND FULL NAME]</span></b> <b><span class="out-c-first"></span></b> <b><span class="out-c-middle"></span></b>. <b><span class="out-c-last"></span></b>, TO THE INCOMING COMMANDER, <b><span class="in-c-rank">[INCOMING COMMANDER RANK AND FULL NAME]</span></b> <b><span class="in-c-first"></span></b> <b><span class="in-c-middle"></span></b>. <b><span class="in-c-last"></span></b>. 
+    </p>
+    <p>
+      “AMONG OUR DISTINGUISHED GUESTS FOR TODAY’S CEREMONY ARE”
+    </p>
+    <p class="indent">
+      (VIP list provided by protocol) 
+    </p>
+    <p>
+      NARRATOR:
+    </p>
+    <p>
+      “AT THIS TIME <b><span class="out-s-title">[OUTGOING SPOUSE TITLE AND LAST NAME]</span></b> <b><span class="out-s-last"></span></b> SPOUSE OF <b><span class="out-c-rank">[OUTGOING COMMANDER RANK AND LAST NAME]</span></b> <b><span class="out-c-last"></span></b> IS BEING PRESENTED A BOUQUET OF RED ROSES THANKING HER FOR ALL HER SUPPORT AND DEVOTION TO THE SOLDIERS AND FAMILIES OF THE <b><span class="unit">[UNIT]</span></b>. 
+    </p>
+    <p class="indent">
+      (PAUSE FOR APPLAUSE)
+    </p>
+    <p>
+      “AT THIS TIME <b><span class="in-s-title">[INCOMING SPOUSE TITLE AND LAST NAME]</span></b> <b><span class="in-s-last"></span></b>, SPOUSE OF <b><span class="in-c-rank">[INCOMING COMMANDER RANK AND FULL NAME]</span></b> <b><span class="in-c-last"></span></b>, IS RECEIVING A BOUQUET OF YELLOW ROSES WELCOMING HER TO THE <b><span class="unit">[UNIT]</span></b>. YELLOW IS THE COLOR OF NEW BEGINNINGS AND SYMBOLIZES HER ARRIVAL TO THE 10TH MOUNTAIN DIVISION. 
+    </p>
+    <p class="indent">
+      (PAUSE FOR APPLAUSE)
+    </p>
+    <p>
+      “LADIES AND GENTLEMEN, PLEASE STAND FOR THE INVOCATION GIVEN BY CHAPLAIN <b><span class="chap-last">[CHAPLAIN LAST NAME]</span></b>.” 
+    </p> 
+    <p class="ceremony-part">
+      FORMATION OF TROOPS
+    </p>
+    <p class="indent">
+      CUE: Invocation Complete
+    </p>
+    <p>
+      NARRATOR: 
+    </p>
+    <p>
+      “LADIES AND GENTLEMEN, PLEASE BE SEATED. IN A MOMENT, THE ADJUTANT WILL DIRECT "SOUND ATTENTION" AND OUR CEREMONY WILL BEGIN.” 
+    </p> 
+    <p>
+      NARRATOR:
+    </p>
+    <p>
+      “THE 10TH MOUNTAIN DIVISION BAND IS UNDER THE DIRECTION OF <b><span class="band-c-rank">[BAND COMMANDER RANK </span></b> <b><span class="band-c-last">AND LAST NAME]</span></b>, THE DRUM MAJOR FOR TODAY’S CEREMONY IS <b><span class="drum-rank">[DRUM MAJOR RANK AND LAST NAME]</span></b> <b><span class="drum-last"></span></b>. 
+    </p>
+    <p>   
+      NARRATOR:
+    </p>
+    <p>
+      “THE COMMANDER OF TROOPS FOR TODAY'S CEREMONY IS <b><span class="cot-rank">[COT RANK AND FULL NAME]</span></b> <b><span class="cot-first"></span></b> <b><span class="cot-middle"></span></b> <b><span class="cot-last"></span></b>.”
+    </p>
+    <p class="ceremony-part">      
+      PRESENTATION AND HONORS 
+    </p>
+    <p class="indent">
+      A.	As the narrator announces the reviewing party (senior, outgoing and incoming cdrs), move to the reviewing line.  
+    </p>
+    <p> 
+      NARRATOR: 
+    </p> 
+    <p>
+      “THE REVIEWING PARTY FOR TODAY’S CEREMONY IS COMPOSED OF <b><span class="sen-c-rank">[SENIOR COMMANDER RANK AND FULL NAME]</span></b> <b><span class="sen-c-first"></span></b> <b><span class="sen-c-middle"></span></b>. <b><span class="sen-c-last"></span></b>, <b><span class="sen-c-rank">[OUTGOING COMMANDER RANK AND FULL NAME]</span></b> <b><span class="out-c-first"></span></b> <b><span class="out-c-middle"></span></b>. <b><span class="out-c-last"></span></b>, AND <b><span class="in-c-rank">[INCOMING COMMANDER RANK AND FULL NAME]</span></b> <b><span class="in-c-first"></span></b> <b><span class="in-c-middle"></span></b>. <b><span class="in-c-last"></span></b>.”
+    </p>
+    <p class="indent"> 
+      A.	Cot does an about face and directs, “sound present arms,” once the formation is at present arms the cot does an about face.
+    </p> 
+    <p class="indent">
+      B.  Once the cot is facing the reviewing party, the narrator will ask everyone to stand.
+    </p>
+    <p>
+      NARRATOR:
+    </p>
+    <p>
+      “LADIES AND GENTLEMEN, PLEASE STAND FOR THE RENDERING OF HONORS TO THE SOLDIERS AND FAMILIES OF THE 10TH MOUNTAIN DIVISION AND FORT DRUM.”
+    </p> 
+    <p class="indent">
+      CUE: C.	The cot directs the color guard, “present-arms,” and goes to present arms.
+    </p>
+    <p>
+      NARRATOR:
+    </p>
+    <p>
+      “LADIES AND GENTLEMEN, PLEASE BE SEATED.”
+    </p> 
+    <p class="indent"> 
+      A.	Upon completion of the honors, the cot does an about face and directs the color guard to order arms, then directs the units, “sound order arms and parade rest,” and does an about face.
+    </p>
+    <p>  
+      NARRATOR: 
+    </p> 
+    <p>
+        
+      “UNIT HISTORY.”
+    </p>
+    <p>        
+      “LADIES AND GENTLEMEN, PLEASE RISE FOR THE PLAYING OF THE NATIONAL ANTHEM.”
+    </p>
+    <p class="indent">
+      B.	The reviewing party and all military spectators salute for the playing of the national anthem. 
+    </p>
+    <p>
+      NARRATOR: 
+    </p>
+    <p>
+      “LADIES AND GENTLEMEN, PLEASE BE SEATED.” 
+    </p>
+    <p class="ceremony-part">
+      CHANGE OF COMMAND
+    </p>
+    <p>
+      NARRATOR:
+    </p>
+    <p>
+        
+      “KEY TO THE CHANGE OF COMMAND IS THE PASSING OF THE UNIT’S COLORS.  THESE COLORS REPRESENT NOT ONLY THE HERITAGE AND HISTORY OF THE UNIT, BUT ALSO THE UNITY AND LOYALTY OF ITS SOLDIERS. SINCE THE EARLY DAYS OF WARFARE, COLORS HAVE SERVED AS THE TALISMAN OF UNIT IDENTITY. THE FLAG WAS SYMBOLIC. IT HELPED UNITS DEVELOP A SENSE OF PRIDE AND ESPRIT DE CORPS, AS WELL AS SERVING THE MORE PRACTICAL PURPOSE OF MARKING THE LOCATION OF THE COMMANDER, AND PROVIDING A RALLY POINT FOR SOLDIERS DURING THE SMOKE AND CHAOS OF BATTLE.  THE COLORS ARE THE COMMANDER’S SYMBOL OF AUTHORITY, REPRESENTING HIS RESPONSIBILITIES TO THE ORGANIZATION. WHEREVER THE COMMANDER IS, SO ARE THE COLORS. THE CUSTODIAN OF THE COLORS IS THE COMMAND SERGEANT MAJOR, AS THE SENIOR ENLISTED SOLDIER IN THE UNIT, AND PRINCIPLE ADVISOR TO THE COMMANDER.”
+    </p>
+    <p>
+      NARRATOR: 
+    </p> 
+    <p>
+      “THE PASSING OF THE COLORS SYMBOLIZES THE TRANSFER OF COMMAND RESPONSIBILITY AND AUTHORITY. THE CEREMONY BEGINS AS COMMAND SERGEANT MAJOR <b><span class="csm-last">[CURRENT CSM LAST NAME]</span></b> PASSES THE COLORS TO <b><span class="out-c-rank">[OUTGOING COMMANDER RANK AND LAST NAME]</span></b> <b><span class="out-c-last"></span></b> FOR THE LAST TIME. <b><span class="out-c-rank">[OUTGOING COMMANDER RANK AND LAST NAME]</span></b> <b><span class="out-c-last"></span></b> WILL THEN PASS THE COLORS TO <b><span class="sen-c-rank">[SENIOR COMMANDER RANK AND LAST NAME]</span></b> <b><span class="sen-c-last"></span></b>, THEREBY RELINQUISHING HIS RESPONSIBILITY AND AUTHORITY. <b><span class="sen-c-rank">[SENIOR COMMANDER RANK AND LAST NAME]</span></b> <b><span class="sen-c-last"></span></b> WILL THEN PASS THE COLORS TO <b><span class="in-c-rank">[INCOMING COMMANDER RANK AND LAST NAME]</span></b> <b><span class="in-c-last"></span></b>, CHARGING THE NEW COMMANDER WITH THE SAME RESPONSIBILITIES AND AUTHORITY.” 
+    </p>
+    <p class="indent">
+      CUE: Passing the colors starts on effective.
+    </p>
+    <p>
+      “EFFECTIVE <b><span class="date">[CEREMONY DATE]</span></b>, <b><span class="out-c-rank">[OUTGOING COMMANDER RANK AND FULL NAME]</span></b> <b><span class="out-c-first"></span></b> <b><span class="out-c-middle"></span></b>. <b><span class="out-c-last"></span></b> RELINQUISHES COMMAND OF THE <b><span class="unit">[UNIT]</span></b>.”  
+    </p>
+    <p class="indent">
+        CUE:  Narrator will wait to read until the senior commander has the color. By authority cue passing the colors to the incoming commander.
+    </p>
+    <p>
+      “BY AUTHORITY OF PARAGRAPH 2-5, ARMY REGULATION 600–20, THE UNDERSIGNED ASSUMES COMMAND OF THE <b><span class="unit">[UNIT]</span></b>, SIGNED ,<b><span class="in-c-rank">[INCOMING COMMANDER RANK AND FULL NAME]</span></b> <b><span class="in-c-first"></span></b> <b><span class="in-c-middle"></span></b>. <b><span class="in-c-last"></span></b>, COMMANDING.”  
+    </p>
+    <p class="indent">
+      CUE: The incoming commander passes the colors back to the CSM after commanding.
+    </p>
+    <p class="ceremony-part">   
+      REMARKS
+    </p>
+    <p>
+      NARRATOR: 
+    </p>
+    <p>
+      “LADIES AND GENTLEMEN, <b><span class="sen-c-rank">[SENIOR RANK AND FULL NAME]</span></b> <b><span class="sen-c-first"></span></b> <b><span class="sen-c-middle"></span></b>. <b><span class="sen-c-last"></span></b>.” 
+    </p>
+    <p>
+      “LADIES AND GENTLEMEN, <b><span class="out-c-rank">[OUTGOING COMMANDER RANK AND FULL NAME]</span></b> <b><span class="out-c-first"></span></b> <b><span class="out-c-middle"></span></b>. <b><span class="out-c-last"></span></b>.” 
+    </p>
+    <p>
+      “LADIES AND GENTLEMEN, <b><span class="in-c-rank">[INCOMING COMMANDER RANK AND FULL NAME]</span></b> <b><span class="in-c-first"></span></b> <b><span class="in-c-middle"></span></b>. <b><span class="in-c-last"></span></b> COMMANDER OF THE <b><span class="unit">[UNIT]</span></b>.” 
+    </p>
+    <p class="ceremony-part">
+      CONCLUSION  
+    </p>
+    <p class="indent">
+      A.	Upon completion of the remarks, the cot commands, "sound attention." 
+    </p>
+    <p>
+      NARRATOR: 
+    </p> 
+    <p>
+      “LADIES AND GENTLEMEN, PLEASE STAND FOR THE SINGING OF THE 10TH MOUNTAIN DIVISION SONG AND THE ARMY SONG, THE WORDS TO THESE SONGS ARE LOCATED ON THE BACK OF YOUR PROGRAM.”
+    </p>
+    <p class="indent">
+      B.	It is apparopriate for spectators to stand at attention for the playing of the Division and Army songs.
+    </p>
+    <p>
+      “LADIES AND GENTLEMEN, PLEASE BE SEATED.”
+    </p>
+    <p class="narrator">  
+      NARRATOR: 
+    </p>
+    <p>
+      THANK YOU FOR ATTENDING TODAY'S <b><span class="unit">[UNIT]</span></b> CHANGE OF COMMAND CEREMONY. PLEASE JOIN US UP FRONT TO BID FAREWELL TO <b><span class="out-c-rank">[OUTGOING COMMANDER RANK AND LAST NAME]</span></b> <b><span class="out-c-last"></span></b> AND <b><span class="out-s-title">[OUTGOING SPOUSE TITLE AND LAST NAME]</span></b> <b><span class="out-s-last"></span></b>.”
+    </p>
+  </div>
+  
+</body>
+
+</html>
+
+<!-- 
+    User inputs value into text boxes.
+    JavaScript 
+-->
+
+
+
+
+
+
+
+
+
+

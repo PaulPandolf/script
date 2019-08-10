@@ -1,0 +1,159 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: lighter;
+    margin: 20px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#patch {
+    position: relative;
+    height: 11%;
+    width: 11%;
+    left: 90px;
+    padding-top: 100px;
+    float: left;
+}
+
+#patch2 {
+    position: relative;
+    height: 11%;
+    width: 11%;
+    right: 90px;
+    padding-top: 100px;
+    float: right;
+}
+
+body {
+    background-color: rgb(215, 215, 215);
+    font-family: Arial;
+    font-size: 17px;
+    color: rgb(31, 30, 30);
+}
+
+.container {
+    width: 1140px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 20px;
+    background-color: rgb(240, 240, 240);    
+    border-radius: 1%;
+    /*background-image: url(Pics/bg-01.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;*/
+}
+
+.form {
+    padding: 0;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 600px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.form > * {
+    padding: 15px 30px;
+}
+
+
+#ceremony-date {
+    font-family: Arial;
+    font-size: 15px;
+    /*width: 196px;*/
+    color: rgb(31, 30, 30);
+}
+
+.this-unit {
+    margin-left: -50px;
+}
+
+.row-header {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+label {
+    display: table-row;
+}
+
+select,
+input {
+   font-size: 15px; 
+   background: rgb(215, 215, 215);
+   display: table-cell; 
+   border-radius: 11%;
+   
+}
+
+button {
+    position: relative;
+    width: 150px; 
+    color: white;
+    background: rgb(214, 75, 75);
+    border: 0.1px thin rgb(31, 30, 30);
+    border-radius: 11%;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+    margin: 30px;
+  
+}
+
+p {
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    line-height: 150%;
+    
+}
+
+#script {
+    background-color: rgb(240, 240, 240);    
+    border-radius: 1%;
+    width: 1140px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 20px;
+    visibility: hidden;
+}
+
+.indent {
+    text-indent: 40px;
+}
+
+.ceremony-part {
+    color: blue;
+    font-size: 20px;
+}
+
+.narrator {
+    -webkit-text-emphasis: bold;
+            text-emphasis: bold;
+}
+
+span {
+    text-transform: uppercase;
+}
