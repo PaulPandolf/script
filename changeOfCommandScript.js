@@ -26,7 +26,7 @@ allValues = function(arr, input) {
 document.getElementById('final-product').addEventListener('click', function() {
     // The user input is tracked for each text box
     var visible = function() {
-        document.getElementById('script').style.visibility = "visible";
+        document.getElementById('script').style.display = "block";
     }
     
     visible();
