@@ -15,13 +15,13 @@ h1 {
 
 #patch {
     position: fixed;
-    width: 150px;
+    width: 110px;
     left: 310px;
 }
 
 #patch2 {
     position: fixed;
-    width: 150px;
+    width: 110px;
     right: 310px;
 }
 
