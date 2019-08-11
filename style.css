@@ -118,8 +118,6 @@ input:focus {
 }
 
 #final-product {
-
-    width: 150px;
     color: white;
     background: #e4082c;
     border: none;
@@ -128,10 +126,9 @@ input:focus {
     text-transform: uppercase;
     cursor: pointer;
     font-weight: 800;
-    padding: 10px;
+    padding: 10px 20px;
     margin-top: 40px;
     transition: all .6s;
-
 }
 
 #final-product:hover {
