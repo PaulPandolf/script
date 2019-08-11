@@ -1,16 +1,14 @@
-
 * {
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 h1 {
     font-size: 50px;
     font-weight: lighter;
     margin: 20px;
-    padding-top: 100px;
     padding-bottom: 20px;
     text-align: center;
 }
@@ -46,9 +44,10 @@ body {
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0px 20px;
-    background-color: rgb(240, 240, 240);    
-    border-radius: 1%;
+    padding: 100px 20px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px #0000003d;
     /*background-image: url(Pics/bg-01.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -63,18 +62,21 @@ body {
     display: flex;
     width: 600px;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
-.form > * {
-    padding: 15px 15px 60px 60px;
+section {
+    padding: 20px;
+    width: 300px;
+    background: #eee;
 }
+
 
 
 #ceremony-date {
@@ -99,28 +101,42 @@ label {
 
 select,
 input {
-   font-size: 15px; 
-   background: rgb(215, 215, 215);
-   display: table-cell; 
-   border-radius: 11%;
-   
+    font-size: 16px;
+    line-height: 1.5rem;
+    padding: 5px;
+    background: rgb(215, 215, 215);
+    border-style: none;
+    transition: all .3s;
+    width: 260px;
+    margin: 7px 0;
+
+}
+
+input:focus {
+    outline: 2px solid #0000F3;
+    transition: all .1s;
 }
 
 #final-product {
-   
-    width: 150px; 
+
+    width: 150px;
     color: white;
-    background: rgb(214, 75, 75);
-    border: 0.1px thin rgb(31, 30, 30);
-    border-radius: 5%;
+    background: #e4082c;
+    border: none;
+    border-radius: 500px;
     font-size: 18px;
     text-transform: uppercase;
     cursor: pointer;
-    font-weight: 300;
-    padding: 8px 10px;
+    font-weight: 800;
+    padding: 10px;
     margin-top: 40px;
-    margin-bottom: 100px;
-  
+    transition: all .6s;
+
+}
+
+#final-product:hover {
+    background: #333;
+    transition: all .3s;
 }
 
 p {
@@ -129,17 +145,11 @@ p {
     margin-right: auto;
     width: 800px;
     line-height: 150%;
-    
+
 }
 
 #script {
-    background-color: rgb(240, 240, 240);    
-    border-radius: 1%;
-    width: 1140px;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 100px 20px;
+
     display: none;
 
 }
@@ -155,9 +165,13 @@ p {
 
 .narrator {
     -webkit-text-emphasis: bold;
-            text-emphasis: bold;
+    text-emphasis: bold;
 }
 
 span {
     text-transform: uppercase;
+}
+
+.no-labels label {
+    display: none;
 }
