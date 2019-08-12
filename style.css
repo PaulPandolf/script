@@ -117,7 +117,7 @@ input:focus {
     cursor: pointer;
     font-weight: 800;
     padding: 10px;
-    margin: 40px 300px 15px 300px;
+    margin-top: 40px; /*300px 15px 300px;*/
     
     transition: all .6s;
 
