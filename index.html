@@ -15,9 +15,9 @@
 
         <h1 id="title">BDE/BN CoC Script</h1>
         <form class="form">
-            <section class="row-header unit">
-                <label for="unit">Unit</label>
-                <input type="text" id="unit" placeholder="Unit">
+            <section class="unit">
+                <label for="cg-rank">Unit</label>
+                <input type="text" id="unit">
             </section>
             <section class="this-date">
                 <label class="row-header" for="ceremony-date">Ceremony Date</label>
@@ -26,37 +26,38 @@
 
             <section class="cg">
                 <label class="row-header">Commanding General</label>
+                <label for="cg-rank">Rank</label>
                 <select id="cg-rank" required="required">
                     <option value="">Select Rank</option>
                     <option value="LTG">LTG</option>
                     <option value="MG">MG</option>
                     <option value="BG">BG</option>
                 </select>
-                <label class="no-labels" for="cg-first">First Name</label>
-                <input type="text" id="cg-first" placeholder="First Name">
-                <label class="no-labels" for="cg-middle">Middle Initial</label>
-                <input type="text" id="cg-middle" maxlength="1" pattern="[a-zA-z]" placeholder="Middle Initial">
-                <label class="no-labels" for="cg-last">Last Name</label>
-                <input type="text" id="cg-last" placeholder="Last Name">
+                <label for="cg-first">First Name</label>
+                <input type="text" id="cg-first">
+                <label for="cg-middle">Middle Initial</label>
+                <input type="text" id="cg-middle" maxlength="1" pattern="[a-zA-z]">
+                <label for="cg-last">Last Name</label>
+                <input type="text" id="cg-last">
             </section>
 
             <section class="sen-c">
                 <label class="row-header">Reviewing Officer</label>
-                <label class="no-labels" for="sen-c-rank">Rank</label>
+                <label for="sen-c-rank">Rank</label>
                 <select id="sen-c-rank">
-                    <option value="">Select Rank</option>
+                    <option value=""></option>
                     <option value="LTG">LTG</option>
                     <option value="MG">MG</option>
                     <option value="BG">BG</option>
                     <option value="COL">COL</option>
                     <option value="LTC">LTC</option>
                 </select>
-                <label class="no-labels" for="sen-c-first">First Name</label>
-                <input type="text" id="sen-c-first" placeholder="First Name">
-                <label class="no-labels" for="sen-c-middle">Middle Initial</label>
-                <input type="text" id="sen-c-middle" maxlength="1" placeholder="Middle Initial">
-                <label class="no-labels" for="sen-c-last">Last Name</label>
-                <input type="text" id="sen-c-last" placeholder="Last Name">
+                <label for="sen-c-first">First Name</label>
+                <input type="text" id="sen-c-first">
+                <label for="sen-c-middle">Middle Initial</label>
+                <input type="text" id="sen-c-middle" maxlength="1">
+                <label for="sen-c-last">Last Name</label>
+                <input type="text" id="sen-c-last">
             </section>
 
             <section class="dcsm">
@@ -71,143 +72,136 @@
 
             <section class="csm">
                 <label class="row-header">Current CSM</label>
-                <label class="no-labels" for="csm-first">First Name</label>
-                <input type="text" id="csm-first" placeholder="First Name">
-                <label class="no-labels" for="csm-middle">Middle Initial</label>
-                <input type="text" id="csm-middle" maxlength="1" placeholder="Middle Initial">
-                <label class="no-labels" for="csm-last">Last Name</label>
-                <input type="text" id="csm-last" placeholder="Last Name">
+                <label for="csm-first">First Name</label>
+                <input type="text" id="csm-first">
+                <label for="csm-middle">Middle Initial</label>
+                <input type="text" id="csm-middle" maxlength="1">
+                <label for="csm-last">Last Name</label>
+                <input type="text" id="csm-last">
             </section>
 
             <section class="out-c">
                 <label class="row-header">Outgoing Commander</label>
-                <label class="no-labels" for="out-c-rank">Rank</label>
+                <label for="out-c-rank">Rank</label>
                 <select id="out-c-rank">
-                    <option value="">Select Rank</option>
+                    <option value=""></option>
                     <option value="COL">COL</option>
                     <option value="LTC">LTC</option>
                     <option value="MAJ">MAJ</option>
                 </select>
-                <label class="no-labels" for="out-c-first">First Name</label>
-                <input type="text" id="out-c-first" placeholder="First Name">
-                <label class="no-labels" for="out-c-middle">Middle Initial</label>
-                <input type="text" id="out-c-middle" maxlength="1" placeholder="Middle Initial">
-                <label class="no-labels" for="out-c-last">Last Name</label>
-                <input type="text" id="out-c-last" placeholder="Last Name">
+                <label for="out-c-first">First Name</label>
+                <input type="text" id="out-c-first">
+                <label for="out-c-middle">Middle Initial</label>
+                <input type="text" id="out-c-middle" maxlength="1">
+                <label for="out-c-last">Last Name</label>
+                <input type="text" id="out-c-last">
             </section>
 
             <section class="in-c">
                 <label class="row-header">Incoming Commander</label>
-                <label class="no-labels" for="in-c-rank">Rank</label>
+                <label for="in-c-rank">Rank</label>
                 <select id="in-c-rank">
-                    <option value="">Select Rank</option>
+                    <option value=""></option>
                     <option value="COL">COL</option>
                     <option value="LTC">LTC</option>
                     <option value="MAJ">MAJ</option>
                 </select>
-                <label class="no-labels" for="in-c-first">First Name</label>
-                <input type="text" id="in-c-first" placeholder="First Name">
-                <label class="no-labels" for="in-c-middle">Middle Initial</label>
-                <input type="text" id="in-c-middle" maxlength="1" placeholder="Middle Initial">
-                <label class="no-labels" for="in-c-last">Last Name</label>
-                <input type="text" id="in-c-last" placeholder="Last Name">
+                <label for="in-c-first">First Name</label>
+                <input type="text" id="in-c-first">
+                <label for="in-c-middle">Middle Initial</label>
+                <input type="text" id="in-c-middle" maxlength="1">
+                <label for="in-c-last">Last Name</label>
+                <input type="text" id="in-c-last">
             </section>
 
             <section class="out-s">
                 <label class="row-header">Outgoing Spouse</label>
-                <label class="no-labels" for="out-s-title">Title</label>
+                <label for="out-s-title">Title</label>
                 <select id="out-s-title">
-                    <option value="">Select Title</option>
+                    <option value=""></option>
                     <option value="Mr.">Mr.</option>
                     <option value="Mrs.">Mrs.</option>
                     <option value="Dr.">Dr.</option>
                 </select>
-                <label class="no-labels" for="out-s-first">First Name</label>
-                <input type="text" id="out-s-first" placeholder="First Name">
-                <label class="no-labels" for="out-s-last">Last Name</label>
-                <input type="text" id="out-s-last" placeholder="Last Name">
+                <label for="out-s-first">First Name</label>
+                <input type="text" id="out-s-first">
+                <label for="out-s-last">Last Name</label>
+                <input type="text" id="out-s-last">
             </section>
 
             <section class="in-s">
                 <label class="row-header">Incoming Spouse</label>
-                <label class="no-labels" for="in-s-title">Title</label>
+                <label for="in-s-title">Title</label>
                 <select name="in-s-title" id="in-s-title">
-                    <option value="">Select Title</option>
+                    <option value=""></option>
                     <option value="Mr.">Mr.</option>
                     <option value="Mrs.">Mrs.</option>
                     <option value="Dr.">Dr.</option>
                 </select>
-                <label class="no-labels" for="in-s-first">First Name</label>
-                <input type="text" id="in-s-first" placeholder="First Name">
-                <label class="no-labels" for="in-s-last">Last Name</label>
-                <input type="text" id="in-s-last" placeholder="Last Name">
+                <label for="in-s-first">First Name</label>
+                <input type="text" id="in-s-first">
+                <label for="in-s-last">Last Name</label>
+                <input type="text" id="in-s-last">
             </section>
 
             <section class="cot">
                 <label class="row-header">Commander of Troops</label>
-                <label class="no-labels" for="cot-rank">Rank</label>
+                <label for="cot-rank">Rank</label>
                 <select id="cot-rank">
-                    <option value="">Select Rank</option>
+                    <option value=""></option>
                     <option value="COL">COL</option>
                     <option value="LTC">LTC</option>
                     <option value="LTC">MAJ</option>
                 </select>
-                <label class="no-labels" for="cot-first">First Name</label>
-                <input type="text" id="cot-first" placeholder="First Name">
-                <label class="no-labels" for="cot-middle">Middle Initial</label>
-                <input type="text" id="cot-middle" maxlength="1" placeholder="Middle Initial">
-                <label class="no-labels" for="cot-last">Last Name</label>
-                <input type="text" id="cot-last" placeholder="Last Name">
+                <label for="cot-first">First Name</label>
+                <input type="text" id="cot-first">
+                <label for="cot-middle">Middle Initial</label>
+                <input type="text" id="cot-middle" maxlength="1">
+                <label for="cot-last">Last Name</label>
+                <input type="text" id="cot-last">
             </section>
 
             <section class="band-c">
                 <label class="row-header">Band Commander</label>
-                <label class="no-labels" for="band-c-rank">Rank</label>
+                <label for="band-c-rank">Rank</label>
                 <select id="band-c-rank">
-                    <option value="">Select Rank</option>
+                    <option value=""></option>
                     <option value="WO1">WO1</option>
                     <option value="WO2">WO2</option>
                     <option value="WO3">WO3</option>
                     <option value="WO4">WO4</option>
                     <option value="WO5">WO5</option>
                 </select>
-                <label class="no-labels" for="band-c-first">First Name</label>
-                <input type="text" id="band-c-first" placeholder="First Name">
-                <label class="no-labels" for="band-c-middle">Middle Initial</label>
-                <input type="text" id="band-c-middle" maxlength="1" placeholder="Middle Initial">
-                <label class="no-labels" for="band-c-last">Last Name</label>
-                <input type="text" id="band-c-last" placeholder="Last Name">
+                <label for="band-c-first">First Name</label>
+                <input type="text" id="band-c-first">
+                <label for="band-c-middle">Middle Initial</label>
+                <input type="text" id="band-c-middle" maxlength="1">
+                <label for="band-c-last">Last Name</label>
+                <input type="text" id="band-c-last">
             </section>
 
             <section class="drum">
                 <label class="row-header">Drum Major</label>
-                <label class="no-labels" for="drum-rank">Rank</label>
+                <label for="drum-rank">Rank</label>
                 <select id="drum-rank">
-                    <option value="">Select Rank</option>
+                    <option value=""></option>
                     <option value="SGT">SGT</option>
                     <option value="SSG">SSG</option>
                     <option value="SFC">SFC</option>
                     <option value="1SG">1SG</option>
                 </select>
-                <label class="no-labels" for="drum-last">Last Name</label>
-                <input type="text" id="drum-last" placeholder="Last Name">
+                <label for="drum-last">Last Name</label>
+                <input type="text" id="drum-last">
             </section>
 
-            <section class="chap"> 
+            <section class="chap">
                 <label class="row-header">Chaplain</label>
-                <label class="no-labels" for="chap-rank">Rank</label>
-                <select id="chap-rank">
-                    <option value="">Select Rank</option>
-                    <option value="COL">COL</option>
-                    <option value="LTC">LTC</option>
-                    <option value="MAJ">MAJ</option>
-                    <option value="CPT">CPT</option>
-                <label class="no-labels" for="chap-last">Last Name</label>
-                <input type="text" id="chap-last" placeholder="Last Name">
+                <label for="chap-last">Last Name</label>
+                <input type="text" id="chap-last">
             </section>
 
             <button class="button" type="button" id="final-product"> Submit</button>
-            <h5>Scroll Down</h5>
+
             <script src="./changeOfCommandScript.js"></script>
         </form>
     </div>
