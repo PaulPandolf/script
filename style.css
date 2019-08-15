@@ -8,7 +8,7 @@ h1 {
     margin: 0px;
     font-weight: lighter;
     text-align: center;
-    color: #0000F3;
+    color: rgb(1, 2, 176);
 }
 
 h2 {
@@ -107,7 +107,7 @@ input {
 }
 
 input:focus {
-    outline: 2px solid #0000F3;
+    outline: 2px solid rgb(1, 2, 176);
     transition: all .1s;
 }
 
@@ -122,8 +122,7 @@ input:focus {
     cursor: pointer;
     font-weight: 800;
     padding: 10px;
-    margin-top: 40px; /*300px 15px 300px;*/
-    
+    margin-top: 40px;
     transition: all .6s;
 
 }
@@ -152,7 +151,7 @@ p {
 }
 
 .ceremony-part {
-    color: blue;
+    color: rgb(1, 2, 176);
     font-size: 20px;
 }
 
