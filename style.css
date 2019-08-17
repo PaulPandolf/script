@@ -81,7 +81,6 @@ div {
 #ceremony-date {
     font-family: Arial;
     font-size: 15px;
-    /*width: 196px;*/
     color: rgb(31, 30, 30);
 }
 
@@ -122,9 +121,8 @@ input:focus {
     cursor: pointer;
     font-weight: 800;
     padding: 10px;
-    margin-top: 40px;
+    margin: 40px 100px 0px 100px;
     transition: all .6s;
-
 }
 
 #final-product:hover {
@@ -140,10 +138,15 @@ p {
     line-height: 150%;
 }
 
+#no-text {
+    text-align: center;
+    padding: 10px 10px 0px 10px;
+    margin: 0px 100px 0px 100px;
+    visibility: hidden;
+}
+
 #script {
-
     display: none;
-
 }
 
 .indent {

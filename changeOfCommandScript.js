@@ -1,11 +1,3 @@
-/*
-init()
-
-document.getElementById('reset').addEventListener('click', function() {
-    init()
-});
-*/
-
 allValues = function(arr, input) {
     var arr;
 
@@ -19,14 +11,11 @@ allValues = function(arr, input) {
     
 }
 
-
-
-
-
 document.getElementById('final-product').addEventListener('click', function() {
     // The user input is tracked for each text box
     var visible = function() {
         document.getElementById('script').style.display = "block";
+        document.getElementById('no-text').style.visibility = "visible";
     }
     
     visible();
